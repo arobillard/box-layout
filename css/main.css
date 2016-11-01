@@ -346,32 +346,55 @@ h1 + p {
 /* ----- =Footer ----- */
 
 
-footer {
-  overflow: hidden;
+.mastfoot {
   background-color: #222;
-  padding: 0 1rem;
-}
-
-footer ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
   text-align: center;
+  width: 100%;
 }
 
-footer ul li {
+.foot-size {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+}
+
+.mastfoot ul {
+  list-style-type: none;
+}
+
+.mastfoot li {
   display: inline-block;
 }
 
-footer ul a {
-  color: #aaa;
-  background-color: #222;
-  padding: 1rem;
+.mastfoot a {
   text-decoration: none;
-  text-align: center;
-  display: block;
+  color: #555;
 }
 
-footer ul a:hover {
-  color: #888;
+.mastfoot a.current-p {
+  color: rgba(0, 108, 141,0.5);
+}
+
+.social img {
+  width: 1rem;
+  margin: 0 .75rem;
+  position: relative;
+  top: 0.2rem;
+}
+
+.mastfoot a:hover {
+  opacity: 0.75;
+}
+
+.info li {
+  border-right: 1px solid #555;
+}
+
+.info li.outer {
+  border-right: none;
+}
+
+.info a {
+  padding: 0 1rem;
 }
