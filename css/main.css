@@ -227,20 +227,24 @@ p {
 /* ----- =Main ----- */
 
 main {
-  padding: 2rem;
+  padding: 1rem 2rem;
   overflow: hidden;
 }
 
 .div-main {
   background-color: #fcfcfc;
   border: 1px solid #ccc;
-  box-shadow: .1px .1px 5px #bbb;
+  box-shadow: .5px .5px 2px #bbb;
   border-radius: 5px;
 }
 
 .width-wrap {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+main .width-wrap {
+  min-width: 1070px;
 }
 
 .sidebar a {
@@ -252,10 +256,54 @@ main {
   font-size: .875rem;
 }
 
+.sidebar img {
+  width: 100%;
+  display: block;
+}
+
 .left-sb {
   float: left;
   width: 20%;
   min-height: calc(100vh - 5rem);
+}
+
+.left-sb ul {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.left-sb a {
+  padding: .125rem .25rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.left-sb a:hover {
+  background-color: #e2e2e2;
+}
+
+.left-sb a img {
+  display: inline-block;
+  width: 10%;
+  margin-right: .5rem;
+  vertical-align: middle;
+}
+
+.left-sb a p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: .875rem;
+}
+
+.left-sb h3 {
+  margin: 1rem 0 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #666;
+  padding: 0 .25rem;
 }
 
 .right-sb {
@@ -305,12 +353,12 @@ main {
 .main-content {
   width: 60%;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 main header {
   padding: .5rem;
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
 }
 
 h1 {
